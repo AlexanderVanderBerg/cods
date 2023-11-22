@@ -1,7 +1,7 @@
-import {ThemeProvider,createTheme} from '@mui/material/styles'
-import CssBaseline from '@mui/material/CssBaseline'
-import { Button } from '@mui/material';
+import {ThemeProvider,createTheme} from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
+import WhoWeAre from './components/WhoWeAre';
 
 function App() {
   const theme=createTheme({
@@ -12,12 +12,7 @@ function App() {
   return (
     <ThemeProvider theme={theme} >
       <CssBaseline/>
-      <Button variant='contained' color='primary' >Hello World</Button>
-
-      <div className="bg-gray-200 p-8">
-        <h1 className="text-4xl font-bold text-blue-600">My Tailwind React App</h1>
-        <p className="text-gray-700 mt-4">Welcome to my app using Tailwind CSS!</p>
-      </div>
+      <WhoWeAre></WhoWeAre>
     </ThemeProvider>
   );
 }

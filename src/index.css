@@ -3,3 +3,22 @@
 @import 'tailwindcss/utilities';
 
 /* Add your custom styles below this line */
+
+.sth {
+    width: 929px;
+height: 125px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Satoshi;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 41px; /* 205% */
+opacity: 0.6;
+}
+
+.wrapper {
+    background-image: url('/src/static/image/brandon-morgan.png') no repeat;
+    width: 100%;
+    height: 1000px;
+}
