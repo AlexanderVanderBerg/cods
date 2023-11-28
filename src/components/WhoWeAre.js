@@ -58,8 +58,8 @@ function WhoWeAre() {
                 </div>
                 {/* end of cods logo in center */}
             </div>
-
-            <div className='mt-24 flex flex-row space-x-8 bg-red-100 pl-24 pr-16'>
+            {/* start of cods healing - who we are  */}
+            <div className='mt-24 flex flex-row space-x-8 pl-24 pr-16 ml-12'>
                 <div className='basis-2/5 mt-7'>
                     <div className='text-[#2E3192] text-lg'>
                         CODS HEALING
@@ -165,6 +165,7 @@ function WhoWeAre() {
                     <img src={sixteen_miles} alt="sixteen_miles" className=''/>
                 </div>
             </div>
+            {/* end of cods healing - who we are  */}
         </div>
     );
   }
