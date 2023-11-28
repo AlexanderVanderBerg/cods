@@ -3,12 +3,12 @@ import cods_black_logo from '../static/image/CoDS_Black_Logo.png';
 function OurServices() {
     return (
         <div>
-            <div className="w-full h-[1405px] bg-[#F8F8F8]">
-                <div className='mt-12 flex flex-col justify-center items-center'>
+            <div className="w-full h-[1355px] bg-[#F8F8F8]">
+                <div className='mt-12 flex flex-col justify-center items-center pt-12'>
                     <img src={cods_black_logo} alt="cods_black_logo" className='w-[149px] h-[84px]'/>
                     <div className='mt-3 text-[#2E3192]'>OUR SERVICES</div>
                 </div>
-                <div className='flex items-center justify-center'>
+                <div className='flex items-center justify-center mt-4'>
                     <div className='mt-4 text-[#333] text-7xl'>
                         We Love Our Parish and Stay
                         <div className='flex flex-row justify-center'>
@@ -135,6 +135,11 @@ function OurServices() {
                     </div>
                 </div>
                 {/* end of 4 service cards */}
+                <div className='flex flex-row items-center justify-center mt-20'>
+                    <div className='bg-[#2E3192] px-12 py-4 text-white text-base rounded-md border'>
+                        View All Services
+                    </div>
+                </div>
             </div>
         </div>
     );
