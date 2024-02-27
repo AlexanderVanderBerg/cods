@@ -3,6 +3,7 @@ import cods_black_logo from '../static/image/CoDS_Black_Logo.png';
 import cods_black_logo_big from '../static/image/CoDS_Black_Logo_Big.png';
 import call_icon from '../static/image/call.png';
 import sixteen_miles from '../static/image/sixteen-miles.png';
+import { Link } from 'react-router-dom';
 
 
 function WhoWeAre() {
@@ -16,12 +17,13 @@ function WhoWeAre() {
                     </div>
 
                     <div className='ml-auto text-white flex items-center'>
-                        <div className='mr-10'>Home</div>
-                        <div className='mr-10'>About</div>
-                        <div className='mr-10'>Services</div>
-                        <div className='mr-10'>Products</div>
-                        <div className='mr-10'>Pricing</div>
-                        <div className='mr-20'>Contact</div>
+                        <div className='mr-10'><Link to="/auth/signin" >Home</Link></div>
+                        <div className='mr-10'><Link to="/auth/signin" >About</Link></div>
+                        <div className='mr-10'><Link to="/auth/signin" >Services</Link></div>
+                        <div className='mr-10'><Link to="/auth/signin" >Products</Link></div>
+                        <div className='mr-10'><Link to="/auth/signin" >Pricing</Link></div>
+                        <div className='mr-10'><Link to="/auth/signin" >Login</Link></div>
+                        <div className='mr-20'><Link to="/auth/signin" >Contact</Link></div>
                         <img src={call_icon} alt="call_icon" className=''/>
                         <div className=''>+34 6778 2941</div>
                     </div>

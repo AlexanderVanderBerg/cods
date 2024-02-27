@@ -3,6 +3,7 @@ import cods_black_logo from '../static/image/CoDS_Black_Logo.png';
 import airbuds from '../static/image/airbuds.png';
 import bioprotein from '../static/image/bioprotein.png';
 import grander from '../static/image/grander.png';
+import threebuttons from '../static/image/threebuttons.png';
 import ProductCard from './FeaturedProducts/ProductCard';
 
 export default function FeaturedProducts() {
@@ -42,13 +43,8 @@ export default function FeaturedProducts() {
             </div>
         </div>
         {/* end of feature products */}
-        <div className='flex flex-row justify-center bg-black my-16'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="84" height="28" viewBox="0 0 84 28" fill="none">
-                <circle cx="13.5484" cy="13.5484" r="13.0484" stroke="white"/>
-                <circle cx="13.5484" cy="13.5483" r="6.95161" fill="white" stroke="white"/>
-                <circle cx="48.0968" cy="13.5483" r="6.95161" stroke="white" stroke-opacity="0.5"/>
-                <circle cx="76.5484" cy="13.5483" r="6.95161" stroke="white" stroke-opacity="0.5"/>
-            </svg>
+        <div className='flex flex-row justify-center my-16'>
+            <img src={threebuttons} alt="threebuttons"/>
         </div>
     </div>
   )

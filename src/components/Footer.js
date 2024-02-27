@@ -7,7 +7,7 @@ import Mark from "../static/image/Mark.png";
 export default function Footer() {
   return (
     <div>
-      <div className="w-full h-[535px] bg-[#F8F8F*] px-12 flex flex-row justify-between">
+      <div className="w-full h-[535px] px-12 flex flex-row justify-between mt-12">
         <div>
           <div>
             <img

@@ -1,26 +1,26 @@
 import {ThemeProvider,createTheme} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-
-import WhoWeAre from './components/WhoWeAre';
-import OurServices from './components/OurServices';
-import FeaturedProducts from './components/FeaturedProducts';
-import OurStory from './components/OurStory';
-import Footer from './components/Footer';
+import { BrowserRouter} from 'react-router-dom';
+import AppRoutes from './routes'
 
 function App() {
   const theme=createTheme({
     palette:{
-      mode:'light'
+      mode:'light',
+      main: {
+        main: '#2E3192',
+        light: '#222222',
+        dark: '#0E1172',
+        contrastText: '#ffffff',
+      },
     }
   })
   return (
     <ThemeProvider theme={theme} >
       <CssBaseline/>
-      <WhoWeAre></WhoWeAre>
-      <OurServices></OurServices>
-      <FeaturedProducts></FeaturedProducts>
-      <OurStory></OurStory>
-      <Footer></Footer>
+      <BrowserRouter >
+        <AppRoutes />
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
